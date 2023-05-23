@@ -25,8 +25,10 @@
   <body>
     <header class="header">
       <div class="cointainer">
-        <div class="main-logo">
-          <a class="main-logo__a" href="./"><span class="main-logo__web">Web</span><span class="main-logo__studio">Studio</span></a>
+        <div class="main">
+          <a class="main__logo-link" href="./"
+            ><span class="main__logo-web">Web</span><span class="main__logo-studio">Studio</span></a
+          >
           <nav>
             <ul class="menu">
               <li><a class="menu__link-nav menu__is-on" href="./">Agencja</a></li>
@@ -55,20 +57,17 @@
     </header>
 
     <main>
-
       <section class="main-box">
-        <h1 class="main-box__h1" class="main-box__cointainer">
+        <h1 class="main-box__title" class="main-box__cointainer">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button class="main-box__button" type="button" data-modal-open>Zamów usługę</button>
+        <button class="button" type="button" data-modal-open>Zamów usługę</button>
       </section>
-
 
       <section class="section">
         <h2 hidden>Nasze zalety</h2>
         <ul class="section__name-card">
-
           <li class="item">
             <div class="item__icon">
               <svg width="65.32" height="70">
@@ -123,12 +122,9 @@
         </ul>
       </section>
 
-
-
-      <section class="projects">
-        <h2 class="h2">Czym się zajmujemy</h2>
+      <section class="section__projects">
+        <h2 class="section__title">Czym się zajmujemy</h2>
         <ul class="section__name-card">
-
           <li class="projects__item">
             <figure class="projects__img-with-title">
               <img src="images/img.jpg" alt="komputer1" width="370" height="294" />
@@ -152,12 +148,10 @@
         </ul>
       </section>
 
-
       <section class="team">
         <div class="team__box">
-          <h2 class="h2">Nasz zespół</h2>
+          <h2 class="section__title">Nasz zespół</h2>
           <ul class="section__name-card">
-
             <li class="team__item">
               <img
                 src="images/img3.jpg"
@@ -249,7 +243,6 @@
               </div>
             </li>
 
-
             <li class="team__item">
               <img src="images/img5.jpg" alt="Mężczyzna w okularach" width="270" height="260" />
               <h3 class="team__h3">John Doe</h3>
@@ -280,10 +273,9 @@
         </div>
       </section>
 
-
       <section class="clients">
         <div class="clients__box">
-          <h2 class="h2">Nasi klienci</h2>
+          <h2 class="section__title">Nasi klienci</h2>
           <div class="clients__container">
             <svg class="clients__icon" width="41" height="46.7" viewBox="0 0 40 40">
               <use href="./images/icons.svg#icon-Logo-6"></use></svg
@@ -328,7 +320,9 @@
                 >
               </li>
               <li>
-                <a class="footer__contact" class="footer" href="tel:+48111111111">+48 111 111 111</a>
+                <a class="footer__contact" class="footer" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </address>
@@ -359,7 +353,6 @@
             ></a>
           </div>
         </div>
-
 
         <div>
           <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>

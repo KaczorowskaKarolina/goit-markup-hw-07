@@ -25,12 +25,14 @@
   <body>
     <header class="header">
       <div class="cointainer">
-        <div class="main-logo">
-          <a class="main-logo__a" href="./"><span class="main-logo__web">Web</span><span class="main-logo__studio">Studio</span></a>
+        <div class="main">
+          <a class="main__logo-link" href="./"
+            ><span class="main__logo-web">Web</span><span class="main__logo-studio">Studio</span></a
+          >
           <nav>
             <ul class="menu">
-              <li><a class="menu__link-nav" href="./">Agencja</a></li>
-              <li><a class="menu__link-nav menu__is-on" href="./portfolio.html">Portfolio</a></li>
+              <li><a class="menu__link-nav menu__is-on" href="./">Agencja</a></li>
+              <li><a class="menu__link-nav" href="./portfolio.html">Portfolio</a></li>
               <li><a class="menu__link-nav" href="#contact">Kontakt</a></li>
             </ul>
           </nav>
@@ -249,7 +251,9 @@
                 >
               </li>
               <li>
-                <a class="footer__contact" class="footer" href="tel:+48111111111">+48 111 111 111</a>
+                <a class="footer__contact" class="footer" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </address>
@@ -281,10 +285,9 @@
           </div>
         </div>
 
-
         <div>
           <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>
-          <form class="submit-form" name="submit-form" novalidate>
+          <form class="submit__form" name="submit-form" novalidate>
             <input class="submit__input" type="email" name="email" placeholder="E-mail" required
             pattern="[a-z0-9._%+-]+@[pa-z0-9.-]+\.[a-z]{2-4}$"" />
             <button class="submit__button" type="sumbit">
