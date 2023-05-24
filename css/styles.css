@@ -296,7 +296,7 @@ max-width: 1200px;
   justify-items: center;
   margin-bottom: 50px;
   margin-top: 0px;
-  padding-top: 94px;
+  /* padding-top: 94px; */
 }
 
 /* .section .section__title {
@@ -325,6 +325,7 @@ ul {
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 
 .item__icon {
@@ -420,9 +421,10 @@ ul {
 
 
 
-.team .section {
+.team {
   /* max-width: 100%; */
   background-color: #f5f4fa;
+  /* padding-bottom: 94px; */
   /* margin: 0px; */
 }
 /* 
@@ -485,11 +487,9 @@ ul {
 }
 
 /* .clients {
-  max-width: 100%;
-  background-color: #ffffff;
-  margin: 0px;
-}
-
+ padding-top: 0px;
+} */
+/*
 .clients__box {
   max-width: 1200px;
   margin-left: auto;
