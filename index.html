@@ -26,8 +26,8 @@
     <header class="header">
       <div class="container">
         <div class="main">
-          <a class="main__logo-link" href="./"
-            ><span class="main__logo-web">Web</span><span class="main__logo-studio">Studio</span></a
+          <a class="logo" href="./"
+            ><span class="logo__web">Web</span><span class="logo__studio-black">Studio</span></a
           >
           <nav>
             <ul class="menu">
@@ -40,14 +40,14 @@
         <ul class="header-contact">
           <li>
             <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="link__icon-mailto" width="16" height="12">
+              <svg class="header-contact__icon-mailto" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-1"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="header-contact__link" href="tel:+48111111111">
-              <svg class="link__icon-smartphone" width="10" height="16">
+              <svg class="header-contact__icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone-1"></use></svg
               >+48 111 111 111</a
             >
@@ -67,7 +67,7 @@
 
       <section class="section">
         <h2 hidden>Nasze zalety</h2>
-        <ul class="section__name-card">
+        <ul class="section__box">
           <li class="item">
             <div class="item__icon">
               <svg width="65.32" height="70">
@@ -120,26 +120,25 @@
             </p>
           </li>
         </ul>
-      
 
         <h2 class="section__title">Czym się zajmujemy</h2>
-        <ul class="section__name-card">
-          <li class="projects__item">
-            <figure class="projects__img-with-title">
+        <ul class="section__box">
+          <li class="project">
+            <figure class="project__img-with-title">
               <img src="images/img.jpg" alt="komputer1" width="370" height="294" />
-              <figcaption class="projects__img-title">APLIKACJE KOMPUTEROWE</figcaption>
+              <figcaption class="project__img-title">APLIKACJE KOMPUTEROWE</figcaption>
             </figure>
           </li>
 
-          <li class="projects__item">
-            <figure class="projects__img-with-title">
+          <li class="project">
+            <figure class="project__img-with-title">
               <img src="images/img1.jpg" alt="komputer2" width="370" height="294" />
-              <figcaption class="projects__img-title">APLIKACJE MOBILNE</figcaption>
+              <figcaption class="project__img-title">APLIKACJE MOBILNE</figcaption>
             </figure>
           </li>
 
-          <li class="projects__item">
-            <figure class="projects__img-with-title">
+          <li class="project">
+            <figure class="project__img-with-title">
               <img src="images/img2.jpg" alt="komputer3" width="370" height="294" />
               <figcaption class="projects__img-title">ROZWIĄZANIA GRAFICZNE</figcaption>
             </figure>
@@ -147,10 +146,10 @@
         </ul>
       </section>
 
-      <section class="section" class="team">
+      <section class="section team">
         <div class="container">
           <h2 class="section__title">Nasz zespół</h2>
-          <ul class="section__name-card">
+          <ul class="section__box">
             <li class="team__item">
               <img
                 src="images/img3.jpg"
@@ -158,8 +157,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__h3">John Doe</h3>
-              <p class="team__p">Product Designer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Product Designer</p>
               <div class="icon__container">
                 <a class="icon__social-media"
                   ><svg width="20" height="20" viewBox="0 0 40 40">
@@ -190,8 +189,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__h3">John Doe</h3>
-              <p class="team__p">Frontend developer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Frontend developer</p>
               <div class="icon__container">
                 <a class="icon__social-media"
                   ><svg width="20" height="20" viewBox="0 0 40 40">
@@ -217,8 +216,8 @@
 
             <li class="team__item">
               <img src="images/img6.jpg" alt="uśmiechnięty mężczyzna" width="270" height="260" />
-              <h3 class="team__h3">John Doe</h3>
-              <p class="team__p">Marketing</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Marketing</p>
               <div class="icon__container">
                 <a class="icon__social-media"
                   ><svg width="20" height="20" viewBox="0 0 40 40">
@@ -244,8 +243,8 @@
 
             <li class="team__item">
               <img src="images/img5.jpg" alt="Mężczyzna w okularach" width="270" height="260" />
-              <h3 class="team__h3">John Doe</h3>
-              <p class="team__p">UI Designer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">UI Designer</p>
               <div class="icon__container">
                 <a class="icon__social-media"
                   ><svg width="20" height="20" viewBox="0 0 40 40">
@@ -299,8 +298,8 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a class="footer__logo" href="./"
-            ><span class="footer__web">Web</span><span class="footer__studio">Studio</span></a
+          <a class="logo" href="./"
+            ><span class="logo__web">Web</span><span class="logo__studio-white">Studio</span></a
           >
           <address>
             <ul>
@@ -378,17 +377,17 @@
         <header class="modal__header">Zostaw swoje dane w formularzu poniżej</header>
 
         <form>
-          <label for="username"><p class="label">Imię</p></label>
-          <div class="label__input-box">
-            <svg class="label__icon" width="12" height="12" viewBox="0 0 32 32">
+          <label for="username"><p class="form__label">Imię</p></label>
+          <div class="form__input">
+            <svg class="form__icon" width="12" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
             <input type="text" name="user-name" id="username" required minlength="2" />
           </div>
 
-          <label for="userphone"><p class="label">Telefon</p></label>
-          <div class="label__input-box">
-            <svg class="label__icon" width="13" height="13" viewBox="0 0 32 32">
+          <label for="userphone"><p class="form__label">Telefon</p></label>
+          <div class="form__input">
+            <svg class="form__icon" width="13" height="13" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-1"></use>
             </svg>
             <input
@@ -401,19 +400,19 @@
             />
           </div>
 
-          <label for="useremail"><p class="label">Email</p></label>
-          <div class="label__input-box">
-            <svg class="label__icon" width="15" height="12" viewBox="0 0 32 32">
+          <label for="useremail"><p class="form__label">Email</p></label>
+          <div class="form__input">
+            <svg class="form__icon" width="15" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-2"></use>
             </svg>
             <input type="email" name="user-email" id="useremail" required
             pattern="[a-z0-9._%+-]+@[pa-z0-9.-]+\.[a-z]{2-4}$"" />
           </div>
 
-          <label for="textarea"><p class="label">Komentarz</p></label>
+          <label for="textarea"><p class="form__label">Komentarz</p></label>
 
           <textarea
-            class="label__textarea"
+            class="form__textarea"
             type="text"
             name="feedback"
             rows="5"
