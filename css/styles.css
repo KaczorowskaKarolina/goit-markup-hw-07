@@ -545,21 +545,13 @@ ul {
 
 .submit__button {
   position: relative;
-  background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
   border: none;
-  cursor: pointer;
-  color: #ffffff;
   fill: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   padding: 10px 12px 10px 42px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   transition-property: fill, color, background-color;
 }
@@ -836,19 +828,12 @@ textarea {
 
 .form__buttom {
   position: relative;
-  background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: none;
-  cursor: pointer;
   font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
   transition-property: color;
+  padding: 10px 76px 10px 76px;
 }
 
 .form__buttom:focus,
@@ -873,18 +858,12 @@ textarea {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  align-items: center;
   font-weight: 500;
   line-height: 1.62;
   border-style: none;
-  font-style: normal;
   padding: 6px 22px 6px 22px;
   margin-left: 4px;
   margin-right: 4px;
-  transition-property: color, background-color;
   font-family: Roboto;
   letter-spacing: 0.03em;
 }
@@ -936,10 +915,6 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .pictures__portfolio .pictures__title {
-  padding: 20px 24px 4px 24px;
-} */
 
 .overlay {
   display: block;
