@@ -249,7 +249,10 @@ ul {
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+}
+
+.advantages {
+  padding-bottom: 0px;
 }
 
 .item__icon {
@@ -542,8 +545,6 @@ ul {
 
 .submit__button {
   position: relative;
-  width: 200px;
-  height: 50px;
   background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -556,11 +557,16 @@ ul {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  padding: 10px 24px 10px 42px;
+  padding: 10px 12px 10px 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition-property: fill, color, background-color;
+}
+
+.submit__icon {
+  padding-right: 16px;
+  padding-left: 24px;
 }
 
 .submit__button:focus,
@@ -800,7 +806,7 @@ textarea {
   border-color: #ffffff;
 }
 
-.modal__agreement {
+.form__agreement {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -811,7 +817,7 @@ textarea {
   margin-bottom: 0px;
 }
 
-.modal__agreement-1 {
+.form__agreement-link {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -822,16 +828,14 @@ textarea {
   color: var(--highlight-color);
 }
 
-.modal__button-box {
+.form__button-box {
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.modal__buttom {
+.form__buttom {
   position: relative;
-  width: 200px;
-  height: 50px;
   background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -847,8 +851,8 @@ textarea {
   transition-property: color;
 }
 
-.modal__buttom:focus,
-.modal__buttom:hover {
+.form__buttom:focus,
+.form__buttom:hover {
   color: var(--secondary-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -859,11 +863,10 @@ textarea {
 .buttons {
   display: flex;
   justify-content: center;
-  margin: 0px;
   padding-bottom: 50px;
 }
 
-.buttons__portfolio {
+.button--secondary {
   background-color: #f5f4fa;
   border: none;
   color: var(--main-color);
@@ -882,10 +885,12 @@ textarea {
   margin-left: 4px;
   margin-right: 4px;
   transition-property: color, background-color;
+  font-family: Roboto;
+  letter-spacing: 0.03em;
 }
 
-.buttons__portfolio:hover,
-.buttons__portfolio:focus {
+.button--secondary:hover,
+.button--secondary:focus {
   color: #ffffff;
   background-color: var(--highlight-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -895,9 +900,6 @@ textarea {
 }
 
 .gallery {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   justify-items: left;
 }
 

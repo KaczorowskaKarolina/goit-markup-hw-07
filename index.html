@@ -65,7 +65,7 @@
         <button class="button" type="button" data-modal-open>Zamów usługę</button>
       </section>
 
-      <section class="section">
+      <section class="section advantages">
         <h2 hidden>Nasze zalety</h2>
         <ul class="section__box">
           <li class="item">
@@ -120,7 +120,8 @@
             </p>
           </li>
         </ul>
-
+        </section>
+<section class="section">
         <h2 class="section__title">Czym się zajmujemy</h2>
         <ul class="section__box">
           <li class="project">
@@ -140,7 +141,7 @@
           <li class="project">
             <figure class="project__img-with-title">
               <img src="images/img2.jpg" alt="komputer3" width="370" height="294" />
-              <figcaption class="projects__img-title">ROZWIĄZANIA GRAFICZNE</figcaption>
+              <figcaption class="project__img-title">ROZWIĄZANIA GRAFICZNE</figcaption>
             </figure>
           </li>
         </ul>
@@ -271,8 +272,8 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
+      <section class="section container">
+        <!-- <div class="container"> -->
           <h2 class="section__title">Nasi klienci</h2>
           <div class="clients__container">
             <svg class="clients__icon" width="41" height="46.7" viewBox="0 0 40 40">
@@ -291,7 +292,7 @@
               <use href="./images/icons.svg#icon-Logo-11"></use>
             </svg>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
     </main>
 
@@ -357,8 +358,8 @@
           <form class="submit__form" name="submit-form" novalidate>
             <input class="submit__input" type="email" name="email" placeholder="E-mail" required
             pattern="[a-z0-9._%+-]+@[pa-z0-9.-]+\.[a-z]{2-4}$"" />
-            <button class="submit__button" type="sumbit">
-              Zapisz się<svg width="24" height="24" viewBox="0 0 32 32">
+            <button class="button submit__button" type="sumbit">
+              Zapisz się<svg class="submit__icon" width="24" height="24" viewBox="0 0 32 32">
                 <use href="./images/icons.svg#icon-icon-send-1"></use>
               </svg>
             </button>
@@ -366,6 +367,8 @@
         </div>
       </div>
     </footer>
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-button" data-modal-close>
@@ -376,7 +379,7 @@
 
         <header class="modal__header">Zostaw swoje dane w formularzu poniżej</header>
 
-        <form>
+        <form class="form">
           <label for="username"><p class="form__label">Imię</p></label>
           <div class="form__input">
             <svg class="form__icon" width="12" height="12" viewBox="0 0 32 32">
@@ -442,15 +445,15 @@
               </svg>
             </div>
             <label for="check">
-              <p class="modal__agreement">
-                Oświadczam iż akceptuję <a href="./" class="modal__agreement-1">Regulamin</a> i
-                <a href="./" class="modal__agreement-1">Politykę Prywatności.</a>
+              <p class="form__agreement">
+                Oświadczam iż akceptuję <a href="./" class="form__agreement-link">Regulamin</a> i
+                <a href="./" class="form__agreement-link">Politykę Prywatności.</a>
               </p>
             </label>
           </div>
 
-          <div class="modal__button-box">
-            <button class="modal__buttom" type="submit">Wyślij</button>
+          <div class="form__button-box">
+            <button class="button form__buttom" type="submit">Wyślij</button>
           </div>
         </form>
       </div>
