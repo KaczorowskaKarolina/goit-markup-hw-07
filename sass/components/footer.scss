@@ -1,0 +1,43 @@
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: inline-flex;
+}
+
+.footer__address {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  transition-property: color;
+  margin-top: 20px;
+}
+
+.footer__contact {
+  color: var(--secondary-color);
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.footer__address:hover,
+.fotter__address:focus,
+.footer__contact:hover,
+.footer__contact:focus {
+  color: var(--highlight-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
