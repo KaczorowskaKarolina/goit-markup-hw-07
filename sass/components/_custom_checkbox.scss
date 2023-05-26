@@ -11,9 +11,9 @@
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-}
 
-.chceckbox__control {
+
+&__control {
   position: relative;
   margin-right: 7px;
   width: 16px;
@@ -21,12 +21,12 @@
   margin-top: 13px;
 }
 
-.checkbox__input {
+&__input {
   display: flex;
   margin: 0px;
 }
 
-.checkbox__icon {
+&__icon {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -38,33 +38,34 @@
   transition-property: fill, background-color, color;
   width: 100%;
   background-color: #ffffff;
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
   box-sizing: border-box;
   border-radius: 2px;
   cursor: pointer;
 }
 
-.checkbox__icon:hover {
+&__icon:hover {
   border-color: none;
-  background: var(--highlight-color);
+  background: $highlight-color;
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__icon::after {
+&__icon::after {
   content: '';
   position: absolute;
   display: block;
 }
 
-.checkbox__input:checked + .checkbox__icon {
+&__input:checked + &__icon {
   display: block;
-  border-color: var(--highlight-color);
-  background-color: var(--highlight-color);
+  border-color: $highlight-color;
+  background-color: $highlight-color;
   fill: #ffffff;
 }
 
-.checkbox__input:checked + .checkbox__icon::after {
+&__input:checked + &__icon::after {
   border-color: #ffffff;
+}
 }

@@ -1,4 +1,7 @@
-.form__label {
+.form {
+
+
+&__label {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -9,7 +12,7 @@
   margin-top: 10px;
 }
 
-.form__input {
+&__input {
   position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -17,59 +20,58 @@
   transition-property: fill, border-color;
 }
 
-.form__input:focus-within,
-.form__textarea:focus-within {
-  border-color: var(--highlight-color);
-  fill: var(--highlight-color);
+&__input:focus-within,
+&__textarea:focus-within {
+  border-color: $highlight-color;
+  fill: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__icon {
+&__icon {
   position: absolute;
   top: 50%;
   transform: translate(10px, -50%);
 }
 
-.form__textarea .form__input {
+&__textarea &__input {
   font-family: Roboto;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   border-radius: 4px;
-  color: var(--highlight-color);
+  color: $highlight-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.form__agreement {
+&__agreement {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--secondary-color);
+  color: $secondary-color;
   margin-bottom: 0px;
 }
 
-.form__agreement-link {
+&__agreement-link {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-
-  color: var(--highlight-color);
+  color: $highlight-color;
 }
 
-.form__button-box {
+&__button-box {
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.form__buttom {
+&__buttom {
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -79,9 +81,10 @@
   padding: 10px 76px 10px 76px;
 }
 
-.form__buttom:focus,
-.form__buttom:hover {
-  color: var(--secondary-color);
+&__buttom:focus,
+&__buttom:hover {
+  color: $secondary-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }

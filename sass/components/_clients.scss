@@ -1,10 +1,10 @@
-.clients__container {
+.clients {
   justify-content: space-evenly;
   gap: 30px;
   display: flex;
-}
 
-.clients__icon {
+
+&__icon {
   border: 1px solid;
   border-color: #afb1b8;
   border-radius: 4px;
@@ -15,10 +15,11 @@
   transition-property: fill, border-color;
 }
 
-.clients__icon:focus,
-.clients__icon:hover {
-  fill: var(--highlight-color);
-  border-color: var(--highlight-color);
+&__icon:focus,
+&__icon:hover {
+  fill: $highlight-color;
+  border-color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }

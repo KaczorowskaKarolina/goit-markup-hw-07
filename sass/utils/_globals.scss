@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', 'sans-serif';
-  color: var(--main-color);
+  color: $main-color;
   font-size: 14px;
   text-decoration: none;
   margin: 0px;
@@ -39,7 +39,7 @@ body {
 }
 
 .button {
-  background-color: var(--highlight-color);
+  background-color: $highlight-color;
   color: #ffffff;
   font-size: 16px;
   border-radius: 4px;
@@ -57,7 +57,7 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--secondary-color);
+  color: $secondary-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

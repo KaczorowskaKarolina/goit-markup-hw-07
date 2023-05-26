@@ -2,15 +2,15 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
 
-.project__img-with-title {
+
+&__img-with-title {
   position: relative;
   margin: 0px;
   display: flex;
 }
 
-.project__img-title {
+&__img-title {
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +24,5 @@
   bottom: 0;
   padding: 27px;
   margin: 0;
+}
 }

@@ -7,16 +7,16 @@
   font-weight: 700;
   padding: 10px 0px 20px 70px;
   margin: 0px;
-}
 
-.join-us__container {
+
+&__container {
   margin-left: 70px;
   justify-content: space-evenly;
   gap: 10px;
   display: flex;
 }
 
-.join-us__icon {
+&__icon {
   fill: #afb1b8;
   background-color: #ffffff1a;
   padding: 14px;
@@ -26,10 +26,11 @@
   transition-property: fill, background-color;
 }
 
-.join-us__icon:focus,
-.join-us__icon:hover {
-  background-color: var(--highlight-color);
+&__icon:focus,
+&__icon:hover {
+  background-color: $highlight-color;
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }

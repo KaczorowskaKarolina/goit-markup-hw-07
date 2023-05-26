@@ -4,13 +4,11 @@
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
-}
 
-.advantages {
-  padding-bottom: 0px;
-}
 
-.item__icon {
+
+
+&__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +22,7 @@
   margin-bottom: 30px;
 }
 
-.item__advantages {
+&__advantages {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
@@ -35,12 +33,17 @@
   margin: 0px;
 }
 
-.item__advantages-paragraph {
-  color: var(--secondary-color);
+&__advantages-paragraph {
+  color: $secondary-color;
   letter-spacing: 0.03em;
   line-height: 1.71;
   font-style: normal;
   font-size: 14px;
   padding: 0px;
   margin: 0px;
+}
+}
+
+.advantages {
+  padding-bottom: 0px;
 }
