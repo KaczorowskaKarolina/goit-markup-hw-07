@@ -36,20 +36,24 @@
     justify-content: space-between;
   }
 
-  &__link:hover,
+&__link:hover,
+&__link:hover svg,
   &__link:focus {
     color: $highlight-color;
+fill: red;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  &__link:focus,
-  &__link:hover svg {
-    fill: $highlight-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-  }
+
+
+  // &__link:focus,
+  // &__link:hover svg {
+  //   fill: $highlight-color;
+  //   transition-duration: 250ms;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  // }
   &__icon-mailto {
     fill: $secondary-color;
     padding: 34px 10px 34px 0px;
