@@ -43,8 +43,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  a.header-contact__link:focus,
-  a.header-contact__link:hover svg {
+  &__link:focus,
+  &__link:hover svg {
     fill: $highlight-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
