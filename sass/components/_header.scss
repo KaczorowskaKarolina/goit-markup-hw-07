@@ -1,4 +1,4 @@
-.main {
+.header-navigation {
   display: flex;
   margin: 0px;
 }
@@ -30,7 +30,7 @@
     transition-property: color;
   }
 
-  .main &__link {
+  .header-navigation &__link {
     display: flex;
     align-items: center;
     justify-content: space-between;
